@@ -4,6 +4,9 @@ SXD Software Intern Technical Excercise
 
 ## 1. Math
 
+### Graphical Method:
+![Alt text](relative%20path/to/img.jpg?raw=true "Title")
+
 ### Simplex Method:
 
 a. Interation 0 (Initialization)

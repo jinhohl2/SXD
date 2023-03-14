@@ -5,7 +5,7 @@ SXD Software Intern Technical Excercise
 ## 1. Math
 
 ### Graphical Method:
-![Alt text](relative%20path/to/img.jpg?raw=true "Title")
+![Alt text](assets/plot.png?raw=true "Plot")
 
 ### Simplex Method:
 

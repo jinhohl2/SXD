@@ -19,9 +19,9 @@ Pivoting Row: $x_4$
 
 b. Iteration 1
 
-$Row_{1,new}$ = $Row_1 -(-3) * Row_{3,New}$ 
-$Row_{2,new}$ = $Row_2 -(-1) * Row_{3,New}$ 
-$Row_{3,new}$ = 0.5 * Row_{3}$ 
+$Row_{1,new}$ = $Row_1 -(-3) * Row_{3,New}$// 
+$Row_{2,new}$ = $Row_2 -(-1) * Row_{3,New}$// 
+$Row_{3,new}$ = 0.5 * Row_{3}$// 
 
 
 

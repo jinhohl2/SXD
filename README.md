@@ -3,13 +3,17 @@ SXD Software Intern Technical Excercise
 
 
 ## 1. Math
+<br>
+### a. Graphical Method:
+![Alt text](assets/plot.png?raw=true "Plot") <br>
 
-### Graphical Method:
-![Alt text](assets/plot.png?raw=true "Plot")
+Blue line = first constrint boundary <br>
+Yellow line = second constraint boundary <br>
+The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$. <br>
 
-### Simplex Method:
+### b. Simplex Method:
 
-a. Interation 0 (Initialization)
+i. Interation 0 (Initialization)
 
 |       |  $Z$  | $x_1$ | $x_2$ | $x_3$ | $x_4$ |  RHS  |
 | ----- |:-----:| -----:| -----:| -----:| -----:| -----:|
@@ -20,7 +24,7 @@ a. Interation 0 (Initialization)
 Pivoting Column: $x_1$
 Pivoting Row: $x_4$
 
-b. Iteration 1
+ii. Iteration 1
 
 $Row_{1,new} = Row_1 -(-3) * Row_{3,New}$ <br> 
 $Row_{2,new} = Row_2 -(-1) * Row_{3,New}$ <br>
@@ -33,7 +37,8 @@ $Row_{3,new} = 0.5 * Row_{3}$ <br>
 | $x_1$ |   0   |   1   |$\frac{1}{2}$|   0   |$\frac{1}{2}$|   4   |
 
 Since there is no more negative coefficient in the objective function, we stop.<br>
-The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$.
+The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$. <br>
+
 ## 2. Programming
 
 ## 3. System

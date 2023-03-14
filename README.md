@@ -29,8 +29,8 @@ $Row_{3,new} = 0.5 * Row_{3}$ <br>
 | $x_3$ |   0   |   0   |$\frac{1}{2}$|   1   |$-\frac{1}{2}$|   1   |
 | $x_1$ |   0   |   1   |$\frac{1}{2}$|   0   |$\frac{1}{2}$|   4   |
 
-Since there is no more negative coefficient in the objective function, we stop.
-The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$
+Since there is no more negative coefficient in the objective function, we stop.<br>
+The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$.
 ## 2. Programming
 
 ## 3. System

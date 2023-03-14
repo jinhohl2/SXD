@@ -4,7 +4,9 @@ SXD Software Intern Technical Excercise
 
 ## 1. Math
 <br>
+
 ### a. Graphical Method:
+
 ![Alt text](assets/plot.png?raw=true "Plot") <br>
 
 Blue line = first constrint boundary <br>

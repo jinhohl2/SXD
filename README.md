@@ -1,5 +1,5 @@
 # SXD
-SXD Software Intern Technical Excercise
+SXD Software Engineer Intern Technical Excercise
 
 
 ## 1. Math
@@ -139,6 +139,7 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 2. Two Problem instances and their corresponding constraints are storeed in database.
 - Problems
 <img src="src/assets/db_problems.png?raw=true" width="400px" height="800px">
+
 - Constraints
 <img src="src/assets/db_constraints.png?raw=true" width="400px" height="800px">
 
@@ -151,6 +152,7 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 5. New Problem instance and their corresponding constraints are stored in database.
 - Problems
 <img src="src/assets/db_new_problem.png?raw=true" width="400px" height="800px">
+
 - Constraints
 <img src="src/assets/db_new_constraint.png?raw=true" width="400px" height="800px">
 

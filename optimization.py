@@ -53,18 +53,6 @@ class Problem:
         z = tableau[-1]
         return any(x > 0 for x in z[:-1])
     
-    def find_pivot(self, tableau):
-        z = tableau[-1]
-        column = next(i for i, x in enumerate(z[:-1]) if x > 0)
-
-        restrictions = []
-        for eq in tableau[:-1]:
-            el = eq[column]
-            restrictions.append(math.inf if el <= 0 else eq[-1] / el)
-
-        row = restrictions.index(min(restrictions))
-        return row, column
-    
     def pivot_step(self, tableau, pivot):
         new_tableau = [[] for eq in tableau]
 
@@ -78,6 +66,19 @@ class Problem:
                 new_tableau[eq_i] = np.array(tableau[eq_i]) - multiplier
 
         return new_tableau
+    
+    def find_pivot(self, tableau):
+        z = tableau[-1]
+        column = next(i for i, x in enumerate(z[:-1]) if x > 0)
+
+        restrictions = []
+        for eq in tableau[:-1]:
+            el = eq[column]
+            restrictions.append(math.inf if el <= 0 else eq[-1] / el)
+
+        row = restrictions.index(min(restrictions))
+        return row, column
+    
 
     def is_basic(self, column):
         return sum(column) == 1 and len([c for c in column if c == 0]) == len(column) - 1

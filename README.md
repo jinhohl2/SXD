@@ -127,7 +127,7 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 
 0. Clone repository ot the local environment
 1. Run ```npm install``` to download dependencies
-2. Run ```npm start``` will run the front-end webpage and back-end server concurrently and locally (webpage in local port 4000, serer in local port 4001)
+2. Run ```npm start``` will run the front-end webpage and back-end server concurrently and locally (webpage in local port 8080, serer in local port 4001)
 
 - Demonstration:
 

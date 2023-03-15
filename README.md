@@ -7,7 +7,7 @@ SXD Software Intern Technical Excercise
 
 ### a. Graphical Method:
 
-<img src="src/assets/plot.png?raw=true" width="400px" height="300px">
+<img src="src/assets/plot.png?raw=true" width="600px" height="450px">
 
 Blue line = first constrint boundary <br>
 Yellow line = second constraint boundary <br>
@@ -50,15 +50,15 @@ The implementation of this code is in optimization.py file. <br>
 
 The script includes following steps:
 
-0. Accept an objective function and add constraints.
-1. Initialize the simplex table with input arguments.
-2. See the coefficient in the objective function to check if the solution can be optized.
-3. Find pivot column (entering basic variable) by selecting a positive coefficient in the objective function.
-4. Find pivot row (leaving basic variable) by selecting the row with the smallest min-ratio value.
-5. Replace the pivot row variable by the variable in the pivot column.
-6. Divide the pivot row by the pivot number (intersection of pivot row and column).
-7. For each other row, multiply the new pivot row by the entry in the pivot column of each row and subtract it from the original row.
-8. Go back to step (2) <br>
+1. Accept an objective function and add constraints.
+2. Initialize the simplex table with input arguments.
+3. See the coefficient in the objective function to check if the solution can be optized.
+4. Find pivot column (entering basic variable) by selecting a positive coefficient in the objective function.
+5. Find pivot row (leaving basic variable) by selecting the row with the smallest min-ratio value.
+6. Replace the pivot row variable by the variable in the pivot column.
+7. Divide the pivot row by the pivot number (intersection of pivot row and column).
+8. For each other row, multiply the new pivot row by the entry in the pivot column of each row and subtract it from the original row.
+9. Go back to step (2) <br>
 
 The optimal solution is $(x_1, x_2) = (8,18)$, and $Z=-96$. <br>
 
@@ -137,7 +137,9 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 <img src="src/assets/ui_initial.png?raw=true" width="600px" height="450px">
 
 2. Two Problem instances and their corresponding constraints are storeed in database.
-<img src="src/assets/db_problems.png?raw=true" width="400px" height="800px">
+- Problems
+<img src="src/assets/db_problems.png?raw=true" width="400px" height="800px"><br>
+- Constraints
 <img src="src/assets/db_constraints.png?raw=true" width="400px" height="800px">
 
 3. If we input an existing problem configuration, then the program informs user that the problem already exists.
@@ -147,6 +149,8 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 <img src="src/assets/ui_submit_new.png?raw=true" width="600px" height="450px">
 
 5. New Problem instance and their corresponding constraints are stored in database.
-<img src="src/assets/db_new_problem.png?raw=true" width="400px" height="800px">
+- Problems
+<img src="src/assets/db_new_problem.png?raw=true" width="400px" height="800px"><br>
+- Constraints
 <img src="src/assets/db_new_constraint.png?raw=true" width="400px" height="800px">
 

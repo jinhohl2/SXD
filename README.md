@@ -125,20 +125,16 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 
 - Instruction to run the program locally:
 
-1. Clone repository ot the local environment
-2. Run ```npm install``` to download dependencies
-3. Run ```npm start``` will run the front-end webpage and back-end server concurrently and locally (webpage in local port 4000, serer in local port 4001)
+0. Clone repository ot the local environment
+1. Run ```npm install``` to download dependencies
+2. Run ```npm start``` will run the front-end webpage and back-end server concurrently and locally (webpage in local port 4000, serer in local port 4001)
 
 - Demonstration:
 
-The webpage
-
+0. The initial webpage
 1. Two Problem instances and their corresponding constraints are storeed in database.
-
 2. If we input the same problem configuration, then the program informs user that the problem already exists.
-
 3. If we input different objective function configuration, the program informs user that the has not been solved, and create new Problem instance
-
 4. If we input the existing objective function configuration but with new constraints, the program informs user that the has not been solved, and create new Problem instance along with new Constraint instance.
 
 

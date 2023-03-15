@@ -45,8 +45,9 @@ The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$. <br>
 
 The implementation of this code is in optimization.py file. <br>
 
-The program uses simplex method to optimize the linear program.
-The arguments (coeefifients, right hand sides, etc) can be changed in the main function of this python script.
+- The program uses simplex method to optimize the linear program.
+- The arguments (coeefifients, right hand sides, etc) can be changed in the main function of this python script.
+
 The script includes following steps:
 
 0. Accept an objective function and add constraints.
@@ -62,3 +63,82 @@ The script includes following steps:
 The optimal solution is $(x_1, x_2) = (8,18)$, and $Z=-96$. <br>
 
 ## 3. System
+
+### Questions to consider
+
+1. For the proposed problem, I decided to build a non-relational database. Non-relational databases are designed to be more flexible than traditional relational databases. In the case of linear programming problem like this, the input variables and constraints may not have a fixed quantity or structure. Therefore, I believe a non-relational database is suitable. Additionally, non-relational database tend to be faster for certain type of queries, especially those that involve large amount of unstructured or semi-structured data.
+
+2. Another strength of non-relational database is horizontal scalability. Therefore, if the target audience for this program is all math students in United States, we would be able to increase capacity of database and efficiently handle frequent queries by adding more servers. Also, since non-relational database often have simpler API/query language and have better support for modern dev-frameworks, it would be easier for developers to maintain the server.
+
+3. Thus, I have built a non-relational database with MongoDB and implemented a simple REST-API and back-end server using Node.js, and Express.js. Although the database is actually implemented using MongoDB Atlas, the UI and server for this program is only deployed locally, therefore, I have included the instruction and simple demonstration using images below.
+
+### Database/UI Structure
+
+The database includes two entities: Problem and Constraint. 
+
+The schema for Problem entity is as following:
+
+```javascript
+{
+  "problem_id": ObjectId,
+  "coeff1": Number,
+  "coeff2": Number,
+  "objective": “Max”/”Min”,
+  "constraints": [
+    {
+      "constraint_id": ObjectId,
+      "coeff1": Number,
+      "coeff1": Number,
+      “rhs”:  Number
+    },
+    {
+      "constraint_id": ObjectId,
+      "coeff1": Number,
+      "coeff1": Number,
+      “rhs”:  Number
+    }
+  ]
+}
+
+```
+
+The schema for Constraint entity is as following:
+
+```javascript
+{
+      "constraint_id": ObjectId,
+      "coeff1": Number,
+      "coeff1": Number,
+      “rhs”:  Number
+}
+```
+
+These schema can be checked in src/backend/model directory <br>
+The API support GET and POST operations. 
+The fron-end UI is built with simple HTML/Javascript
+
+When user input is submitted, the program check if there is any Problem instance with the same coefficients and objective **(Problem GET)**. If found, check all the constraints and find if the matching Problem instance has the constraints section equivalent to the input Problem **(Constraint GET)**. If so, output message indicating the problem already exists and prints its solution.
+
+Otherwise, create a new Problem instance **(Problem POST)**. If any of its constraints does not exist in database, also create new Constraint instance for each newly-seen constraint **(Constraint POST)**.
+ 
+### Instruction/Demonstration
+
+- Instruction to run the program locally:
+
+1. Clone repository ot the local environment
+2. Run ```npm install``` to download dependencies
+3. Run ```npm start``` will run the front-end webpage and back-end server concurrently and locally (webpage in local port 4000, serer in local port 4001)
+
+- Demonstration:
+
+The webpage
+
+1. Two Problem instances and their corresponding constraints are storeed in database.
+
+2. If we input the same problem configuration, then the program informs user that the problem already exists.
+
+3. If we input different objective function configuration, the program informs user that the has not been solved, and create new Problem instance
+
+4. If we input the existing objective function configuration but with new constraints, the program informs user that the has not been solved, and create new Problem instance along with new Constraint instance.
+
+

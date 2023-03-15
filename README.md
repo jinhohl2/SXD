@@ -7,7 +7,7 @@ SXD Software Intern Technical Excercise
 
 ### a. Graphical Method:
 
-<img src="src/assets/plot.png?raw=true" width="200px" height="150px">
+<img src="src/assets/plot.png?raw=true" width="400px" height="300px">
 
 Blue line = first constrint boundary <br>
 Yellow line = second constraint boundary <br>
@@ -132,10 +132,19 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 - Demonstration:
 
 0. The initial webpage
+<img src="src/assets/ui_initial.png?raw=true" width="400px" height="300px">
 
 1. Two Problem instances and their corresponding constraints are storeed in database.
-2. If we input the same problem configuration, then the program informs user that the problem already exists.
-3. If we input different objective function configuration, the program informs user that the has not been solved, and create new Problem instance
-4. If we input the existing objective function configuration but with new constraints, the program informs user that the has not been solved, and create new Problem instance along with new Constraint instance.
+<img src="src/assets/db_problems.png?raw=true" width="400px" height="300px">
+<img src="src/assets/db_constraints.png?raw=true" width="400px" height="300px">
 
+3. If we input an existing problem configuration, then the program informs user that the problem already exists.
+<img src="src/assets/ui_submit_existing.png?raw=true" width="400px" height="300px">
+
+4. If we input different problem configuration, the program informs user that the has not been solved, and create new Problem instance along with new Constraint instance.
+<img src="src/assets/ui_submit_new.png?raw=true" width="400px" height="300px">
+
+5. New Problem instance and their corresponding constraints are stored in database.
+<img src="src/assets/db_new_problem.png?raw=true" width="400px" height="300px">
+<img src="src/assets/db_new_constraint.png?raw=true" width="400px" height="300px">
 

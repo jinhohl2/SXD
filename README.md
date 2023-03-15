@@ -45,4 +45,20 @@ The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$. <br>
 
 The implementation of this code is in optimization.py file. <br>
 
+The program uses simplex method to optimize the linear program.
+The arguments (coeefifients, right hand sides, etc) can be changed in the main function of this python script.
+The script includes following steps:
+
+0. Accept an objective function and add constraints.
+1. Initialize the simplex table with input arguments.
+2. See the coefficient in the objective function to check if the solution can be optized.
+3. Find pivot column (entering basic variable) by selecting a positive coefficient in the objective function.
+4. Find pivot row (leaving basic variable) by selecting the row with the smallest min-ratio value.
+5. Replace the pivot row variable by the variable in the pivot column.
+6. Divide the pivot row by the pivot number (intersection of pivot row and column).
+7. For each other row, multiply the new pivot row by the entry in the pivot column of each row and subtract it from the original row.
+8. Go back to step (2) <br>
+
+The optimal solution is $(x_1, x_2) = (8,18)$, and $Z=-96$. <br>
+
 ## 3. System

@@ -7,7 +7,7 @@ SXD Software Intern Technical Excercise
 
 ### a. Graphical Method:
 
-![Alt text](assets/plot.png?raw=true "Plot") <br>
+![Alt text](src/assets/plot.png?raw=true "Plot") <br>
 
 Blue line = first constrint boundary <br>
 Yellow line = second constraint boundary <br>
@@ -42,5 +42,7 @@ Since there is no more negative coefficient in the objective function, we stop.<
 The optimal solution is $(x_1, x_2) = (4,0)$, and $Z=-12$. <br>
 
 ## 2. Programming
+
+The implementation of this code is in optimization.py file. <br>
 
 ## 3. System

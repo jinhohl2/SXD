@@ -8,6 +8,7 @@ SXD Software Intern Technical Excercise
 ### a. Graphical Method:
 
 ![Alt text](src/assets/plot.png?raw=true "Plot") <br>
+<img src="src/assets/plot.png?raw=true">
 
 Blue line = first constrint boundary <br>
 Yellow line = second constraint boundary <br>
@@ -132,6 +133,7 @@ Otherwise, create a new Problem instance **(Problem POST)**. If any of its const
 - Demonstration:
 
 0. The initial webpage
+
 1. Two Problem instances and their corresponding constraints are storeed in database.
 2. If we input the same problem configuration, then the program informs user that the problem already exists.
 3. If we input different objective function configuration, the program informs user that the has not been solved, and create new Problem instance

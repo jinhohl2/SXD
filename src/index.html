@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>SXD Technical Exercise</title>
+    </head>
+    <body id="page-top">
+        <h1> Linear Programming Solver </h1>
+
+        <p>Type "Min"/"Max" for the objective, real numbers for coefficients</p>
+
+
+            <h2>Objective Function</h2> <br>
+            <label for="obj">Objective: </label>
+            <input type="text" id="obj" value="Max"/>
+            <label for="c1"> Z= </label>
+            <input type="number" id="pc1" placeholder="3"/>
+            <label for="c2">x1 + </label>
+            <input type="number" id="pc2" placeholder="5"/> x2  <br> <br>
+
+
+            <h2>Constraints</h2> <br>
+            <label for="constraint1">Constraint1 </label>
+            <input type="number" id="c1c1" />
+            <label for="c1"> x1 + </label>
+            <input type="number" id="c1c2" />
+            <label for="c2"> x2 <= </label>
+            <input type="number" id="rhs1" />  <br><br>
+
+            <label for="constraint2">Constraint2 </label>
+            <input type="number" id="c2c1" />
+            <label for="c1"> x1 + </label>
+            <input type="number" id="c2c2" />
+            <label for="c2"> x2 <= </label>
+            <input type="number" id="rhs2" />  <br><br>
+
+            <label for="constraint3">Constraint3 </label>
+            <input type="number" id="c3c1" />
+            <label for="c1"> x1 + </label>
+            <input type="number" id="c3c2" />
+            <label for="c2"> x2 <= </label>
+            <input type="number" id="rhs3" />  <br><br>
+
+            <label for="constraint4">Constraint4 </label>
+            <input type="number" id="c4c1" />
+            <label for="c1"> x1 + </label>
+            <input type="number" id="c4c2" />
+            <label for="c2"> x2 <= </label>
+            <input type="number" id="rhs4" />  <br><br>
+
+            <label for="constraint5">Constraint5 </label>
+            <input type="number" id="c5c1" />
+            <label for="c1"> x1 + </label>
+            <input type="number" id="c5c2" />
+            <label for="c2"> x2 <= </label>
+            <input type="number" id="rhs5" />  <br><br>
+
+            <button type="submit" id = "submit">Submit</button>
+        
+
+        <div id = "output-container">
+            <p id="output">Result here or already calculated</p>
+        </div>
+
+
+        <script src= "./js/main.js"></script>
+    </body>
+</html>

@@ -7,8 +7,7 @@ SXD Software Intern Technical Excercise
 
 ### a. Graphical Method:
 
-![Alt text](src/assets/plot.png?raw=true "Plot") <br>
-<img src="src/assets/plot.png?raw=true">
+<img src="src/assets/plot.png?raw=true" width="200px" height="150px">
 
 Blue line = first constrint boundary <br>
 Yellow line = second constraint boundary <br>
